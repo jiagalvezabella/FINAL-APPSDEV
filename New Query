@@ -1,0 +1,19 @@
+CREATE TABLE [dbo].[Transactions] (
+    [PlateNumber]  NVARCHAR (50) NULL,
+    [VehicleBrand] NVARCHAR (50) NULL,
+    [VehicleType]  NVARCHAR (50) NULL,
+    [Color]        NVARCHAR (50) NULL,
+    [EntryTime]    DATETIME      NULL,
+    [ExitTime]     DATETIME      NULL
+);
+
+
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50) NOT NULL,
+    Password NVARCHAR(100) NOT NULL,
+
+CREATE TABLE [dbo].[Slots] (
+    [SlotID]      INT IDENTITY (1, 1) NOT NULL,
+    [SlotNumber]  INT NOT NULL,
+    [IsAvailable] BIT NOT NULL,
