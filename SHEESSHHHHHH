@@ -1,0 +1,14 @@
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50) NOT NULL,
+    Password NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Transactions (
+    PlateNumber NVARCHAR(50) NOT NULL,
+    VehicleBrand NVARCHAR(50) NOT NULL,
+    VehicleType NVARCHAR(50) NOT NULL,
+    Color NVARCHAR(50) NOT NULL,
+    EntryTime DATETIME NOT NULL,
+    ExitTime DATETIME NULL
+);
